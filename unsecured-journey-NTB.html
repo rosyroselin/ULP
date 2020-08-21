@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ICICI BANK - Loan Eligibility Check</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <meta name="keywords" content="ICICI Bank">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    <!-- //Head -->
+    <!-- Body -->
+    <body>
+		<!--Header Start-->
+		<header class="header">
+			<div class="row top-bar">
+				<div class="col-md-9">
+					<!--LOGO-->
+					<div class="logo"><img src="../images/logo.svg" /> <span>|</span> Buisness Banking Loan Platform</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="top-nav">
+						<ul class="nav navbar-nav">
+							<li><a href="#faq.html"><i class="fa fa-question-circle"></i></a></li>
+							<li><a href="#contact.html"><i class="fa fa-phone-alt"></i></a></li>
+							<li><a href="#notification.html"><i class="fa fa-bell"></i></a></li>
+							<li><a href="#user-profile.html"><i class="fa fa-user-circle"></i></a></li>
+							<li><a href="logout.html"><i class="fa fa-sign-out-alt"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<div class="information-bar">
+						<ul><li>Product Name | <b>XXXX</b></li> <li>Application No | <b>XXXXXXXX</b></li></ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Header End-->
+        <!--Main Container-->
+        <main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<form class="cp-form" id="customer-profiler" method="get" action="">
+							<!--Collapse Panel Start-->
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<!--Panel One-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Upload Details <i class="more-less fa fa-chevron-up"></i></h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse paper-shadow collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<div class="parentTabs">
+												<ul class="nav nav-tabs main-tab autowidth-tab">
+													<li class="active"><a href="#CurrentAccount">Bank Statement</a></li>
+													<li><a href="#CurrentAccount">GST Return</a></li>
+												</ul>
+											</div>
+											<div class="row">
+												<div class="col-md-12 text-center">
+													<input type="submit" class="btn blue-btn" value="Auto Fetch" />
+													<input type="submit" class="btn blue-btn" value="Upload" /> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!--Panel Two-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Limit Details <i class="more-less fa fa-chevron-up"></i></h4>
+									</div>
+									<div id="collapseTwo" class="panel-collapse paper-shadow collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-md-6 col-xs-12">
+													<div class="form-group">
+														<label class='control-label'>Overdraft Limit Details<span class="red">*</span></label>
+														<div class="start-no">₹50,000</div><div class="end-no">₹150,000</div>
+														<input class="bubble-slider" id="RLA" name="RLA" placeholder="0 - 10" type="number" min="50000" max="150000" step="1000" value="100000" data-decimals="0" data-prefix="₹" data-bubble-font-scale="0.5" data-thumb-scale="0.40" data-thumb-color="#E77817" data-track-scale="0.75"  />
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class='form-group select-control'>
+														<label class='control-label'>ROI</label>
+														<input type="text" class="form-control" placeholder="17%" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class='form-group select-control'>
+														<label class='control-label'>Processing Fee</label>
+														<input type="text" class="form-control" placeholder="2.00%" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12 col-md-offset-6">
+													<div class='form-group select-control'>
+														<label class='control-label'>Pre-payment / Foreclosure Fee</label>
+														<input type="text" class="form-control" placeholder="NIL" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Tenure</label>
+														<input type="text" class="form-control" value="" placeholder="12 Months" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!--Panel Three-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree">
+										<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Details of the Promoter <i class="more-less fa fa-chevron-up"></i></h4>
+									</div>
+									<div id="collapseThree" class="panel-collapse paper-shadow collapse in" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-md-9">
+													<input type="button" value="Promoter 1" class="btn white-btn">
+													<input type="button" value="Promoter 2" class="btn delete-icon">
+												</div>
+												<div class="col-md-3 text-right">
+													<input type="button" value="Add +" class="btn blue-btn">
+												</div>
+											</div>
+											<h2>Promotor Details</h2>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Name of the Promoter <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class='form-group'>
+														<div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+															<label class='control-label'>Date of Birth <span class="red">*</span></label>
+															<input class="form-control" type="text" />
+															<span class="input-group-addon"><i class="far fa-calendar-alt btn-icon"></i></span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Mobile Number <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>PAN <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Gender <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Email <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Shareholding Pattern <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6 col-xs-12">
+													<div class="form-group">
+														<label>Last 4 digit of Aadhar Number <span class="red">*</span></label>
+														<input type="text" class="form-control" value="">
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div><!-- panel-group -->
+							<!--Collapse Panel End-->
+							
+							<!--Action Button-->
+							<div class="action-button">
+								<input type="submit" class="btn blue-btn" value="Previous" />
+								<input type="submit" class="btn blue-btn" value="Save" /> 
+								<input type="submit" class="btn blue-btn" value="Proceed" /> <!-- onclick="window.location.href='offer-for-u.html';" -->
+							</div>
+							<!--Action Button-->
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--Main Container-->
+		<!--Footer Start-->
+		<footer class="footer">Powered by Servosys Solutions</footer>
+		<!--Footer End-->
+	</body>
+	<!--SCRIPT JS-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<!--Responsive DataTable JS-->
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/responsive.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom-file-input.js"></script>
+	<script type="text/javascript" src="js/jquery.bubble-slider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- remove this if you use Modernizr -->
+	<script>$("html").addClass("rose");(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)rose(\s|$)/,"$1js$2")})(document,window,0);</script>
+</html>																																																																																																

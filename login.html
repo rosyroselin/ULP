@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ICICI BANK - Loan Eligibility Check</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <meta name="keywords" content="ICICI Bank">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    <!-- //Head -->
+    <!-- Body -->
+    <body class="login-bg">
+        <!--Main Container-->
+        <main class="login-page">
+			<div class="row">
+				<div class="col-md-6 hidden-xs"></div>
+				<div class="col-md-6 login-right-container">
+					<div class="logo"><img src="images/logo.svg" /></div>
+					<h1>Business Banking Loan Platform</h1>
+					<div class="login-form">
+						<form>
+							<fieldset>
+								<div class="row">
+									<div class="col-sm-9"> Do you have an ICICI Bank Account?</div>
+									<div class="col-sm-3">
+										<div class="form-check switch-field text-center">
+											<input name="group2" id="radio3" value="yes" type="radio" checked>
+											<label for="radio3"> Yes</label>
+											<input name="group2" id="radio4" value="no" type="radio">
+											<label for="radio4"> No</label>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+							
+							<div class="dotted-line"></div>
+							<div class="login-container">
+								<!--Bank Account Yes option Start-->
+								<div id="existingDiv">
+									<div class="tabbable boxed parentTabs">
+									    <ul class="nav nav-tabs main-tab">
+									        <li class="active"><a href="#CurrentAccount">Current Account</a></li>
+									        <li><a href="#SavingAccount">Saving Account</a></li>
+										</ul>
+									    <div class="tab-content">
+											<!--Current Account Start-->
+									        <div class="tab-pane fade active in" id="CurrentAccount">
+									            <div class="tabbable">
+									                <ul class="nav nav-tabs sub-tab">
+									                    <li class="active"><a href="#CurrentCIB">Corporate Internet Banking</a></li>
+									                    <li><a href="#CurrentDCL">Debit Card Login</a></li>
+													</ul>
+									                <div class="tab-content">
+														<!--CURRENT Corporate Internet Banking Start-->
+									                    <div class="tab-pane fade active in" id="CurrentCIB">
+									                        <div class="row">
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter your User ID " required />
+																		<span class="error-msg">Please enter user ID</span>
+																	</div>
+																</div>
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="password" placeholder="Password" />
+																		<span class="error-msg" hidden>Please enter Password</span>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter Captcha" />
+																		<span class="error-msg" hidden>Please enter Captcha</span>
+																	</div>
+																</div>
+																<div class="col-md-2 text-center">
+																	<input type="button" class="refresh-btn" />
+																</div>
+																<div class="col-md-4">
+																	<div class="btn captcha">XIJAIU</div>
+																</div>
+															</div>
+														</div>
+									                    <!--CURRENT Corporate Internet Banking End-->
+														
+														<!--CURRENT Debit Card Login Start-->
+														<div class="tab-pane fade" id="CurrentDCL">
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter 16 Digit Debit Card Number" />
+																	</div>
+																</div>
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="number" placeholder="PIN" />
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter Captcha" />
+																	</div>
+																</div>
+																<div class="col-md-2 text-center">
+																	<input type="button" class="refresh-btn" />
+																</div>
+																<div class="col-md-4">
+																	<div class="btn captcha">XIJAIU</div>
+																</div>
+															</div>
+														</div>
+														<!--CURRENT Debit Card Login End-->
+													</div>
+												</div>
+											</div>
+									        <!--Current Account End-->
+											
+											<!--Saving Account Start-->
+											<div class="tab-pane fade" id="SavingAccount">
+									            <div class="tabbable">
+									                <ul class="nav nav-tabs sub-tab">
+									                    <li class="active"><a href="#SavingIB">Internet Banking</a></li>
+									                    <li><a href="#SavingDCL">Debit Card Login</a></li>
+													</ul>
+									                <div class="tab-content">
+														<!--SAVING Internet Banking Start-->
+									                    <div class="tab-pane fade active in" id="SavingIB">
+									                        <div class="row">
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter your User ID " />
+																	</div>
+																</div>
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="password" placeholder="Password" />
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter Captcha" />
+																	</div>
+																</div>
+																<div class="col-md-2 text-center">
+																	<input type="button" class="refresh-btn" />
+																</div>
+																<div class="col-md-4">
+																	<div class="btn captcha">XIJAIU</div>
+																</div>
+															</div>
+														</div>
+									                    <!--SAVING Internet Banking End-->
+														
+														<!--SAVING Debit Card Login Start-->
+														<div class="tab-pane fade" id="SavingDCL">
+									                        <div class="row">
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter 16 Digit Debit Card Number" />
+																	</div>
+																</div>
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<input class="form-control" type="number" placeholder="PIN" />
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<input class="form-control" type="text" placeholder="Enter Captcha" />
+																	</div>
+																</div>
+																<div class="col-md-2 text-center">
+																	<input type="button" class="refresh-btn" />
+																</div>
+																<div class="col-md-4">
+																	<div class="btn captcha">XIJAIU</div>
+																</div>
+															</div>
+														</div>
+														<!--SAVING Debit Card Login End-->
+													</div>
+												</div>
+											</div>
+											<!--Saving Account End-->
+										</div>
+									</div>
+									
+								</div>
+								<!--Bank Account Yes option End-->
+								
+								<!--Bank Account No option Start-->
+								<div id="notExistDiv" hidden>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group otp-box">
+												<input class="form-control otp-text" type="text" placeholder="Enter your mobile number" />
+												<input type="button" class="btn otp-btn" value="Generate OTP" />
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input class="form-control" type="password" placeholder="OTP Verification" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" placeholder="Enter Captcha" />
+											</div>
+										</div>
+										<div class="col-md-2 text-center">
+											<input type="button" class="refresh-btn" />
+										</div>
+										<div class="col-md-4">
+											<div class="btn captcha">XIJAIU</div>
+										</div>
+									</div>
+									
+								</div>
+								<!--Bank Account No option End-->
+							</div>
+							<div class="dotted-line"></div>
+							<div class="row authorize">
+								<div class="col-sm-1 col-xs-2 text-center"><input type="checkbox"></div>
+								<div class="col-sm-11 col-xs-10 no-gutter text-justify">I hereby authorise ICICI Bank and its representative  to contact on the registered mobile number</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group text-center"><input type="button" class="btn" onclick="window.location.href='offer-for-u.html';" value="Submit"></div>
+							</div>
+						</form>
+						<div class="text-justify small">
+							<b>Disclaimer:</b>
+							<p>Terms & Conditions Apply. The grant of overdraft facility is at the absolute discretion of ICICI Bank ("Bank") and is subject to submission of requisite documents and meeting Bank's eligibility criteria. The Bank reserves the right, at any time, to modify/alter any of the terms & conditions of the facility. The applicant authorizes the Bank to assess the Credit Bureau report of the Entity/ Proprietors.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="ulp-slider-container">
+				<h1>Financial Solutions Designed To Meet Your Business Needs</h1>
+				<div class="ulp-slider">
+					<div class="MS-content">
+						<div class="item ulp-slider-box ulp-slider-box-1">
+							<h2>Instant Overdraft</h2>
+							<div class="ulp-slider-content">
+								<p>Collateral free OD limit upto <span>15 lakhs</span><br/>in your account</p>
+								<ul>
+									<li>Instant Sanction</li>
+									<li>Without Financials</li>
+									<li>Pay Interest only on amount utilised</li>
+								</ul>
+								<input type="button" class="btn blue-btn arrow-btn pull-left" value="Know More">
+								<input type="button" class="btn blue-btn arrow-btn pull-right" value="FAQ">
+							</div>
+						</div>
+						<div class="item ulp-slider-box ulp-slider-box-2">
+							<h2>GST Business Loan</h2>
+							<div class="ulp-slider-content">
+								<p>Quick OD limit up to <span>2 Crore</span> basis your <br/>GST returns</p>
+								<ul>
+									<li>No Financials</li>
+									<li>Instant Sanction upto 50 lakhs</li>
+								</ul>
+								<input type="button" class="btn blue-btn arrow-btn pull-left" value="Know More">
+								<input type="button" class="btn blue-btn arrow-btn pull-right" value="FAQ">
+							</div>
+						</div>
+						<div class="item ulp-slider-box ulp-slider-box-3">
+							<h2>Select OD</h2>
+							<div class="ulp-slider-content">
+								<p>Purpose Based OD for your GST/ Tax<br/> payment upto <span>15 lakhs</span></p>
+								<ul>
+									<li>Exclusive for GST/Tax payment<br>through ICICI bank</li>
+									<li>Minimal Documentation</li>
+								</ul>
+								<input type="button" class="btn blue-btn arrow-btn pull-left" value="Know More">
+								<input type="button" class="btn blue-btn arrow-btn pull-right" value="FAQ">
+							</div>
+						</div>
+						<div class="item ulp-slider-box ulp-slider-box-4">
+							<h2>Insta Secured Overdraft</h2>
+							<div class="ulp-slider-content">
+								<p>Pre-Qualified OD limit upto <span> 1 Crore</span> for<br/> existing Current account customers</p>
+								<ul>
+									<li>No Financials</li>
+									<li>Collateral based loans</li>
+								</ul>
+								<input type="button" class="btn blue-btn arrow-btn pull-left" value="Know More">
+								<input type="button" class="btn blue-btn arrow-btn pull-right" value="FAQ">
+							</div>
+						</div>
+					</div>
+					<div class="MS-controls">
+						<button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+						<button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--Main Container-->
+		<!--Footer Start-->
+		<footer class="footer">Powered by Servosys Solutions</footer>
+		<!--Footer End-->
+	</body>
+	<!--SCRIPT JS-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!--Responsive DataTable JS-->
+	<script type="text/javascript" src="js/responsive.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/multislider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+	//Login page Slider
+	$('.ulp-slider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1500
+    });
+	</script>
+</html>																																																																																															

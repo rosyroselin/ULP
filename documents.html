@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ICICI BANK - Loan Eligibility Check</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <meta name="keywords" content="ICICI Bank">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    <!-- //Head -->
+    <!-- Body -->
+    <body>
+		<!--Header Start-->
+		<header class="header">
+			<div class="row top-bar">
+				<div class="col-md-9">
+					<!--LOGO-->
+					<div class="logo"><img src="../images/logo.svg" /> <span>|</span> Buisness Banking Loan Platform</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="top-nav">
+						<ul class="nav navbar-nav">
+							<li><a href="#faq.html"><i class="fa fa-question-circle"></i></a></li>
+							<li><a href="#contact.html"><i class="fa fa-phone-alt"></i></a></li>
+							<li><a href="#notification.html"><i class="fa fa-bell"></i></a></li>
+							<li><a href="#user-profile.html"><i class="fa fa-user-circle"></i></a></li>
+							<li><a href="logout.html"><i class="fa fa-sign-out-alt"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="information-bar">Entity | <b>ABC Enterprises</b></div>
+				</div>
+			</div>
+		</header>
+		<!--Header End-->
+		<!--Navigation Start-->
+		<nav>
+			<ul class="nav navigation">
+				<li class="active"><a href="secured-promoter-details-ERV.html"><span> 1 </span>Promoter Details <i class="fa fa-check-circle green" aria-hidden="true"></i></a></li>
+				<li class="active"><a href="cscd.html"><span> 2 </span>Collateral and Sister Concern Details <i class="fa fa-check-circle green" aria-hidden="true"></i></a></li>
+				<li class="active"><a href="documents.html"><span> 3 </span>Documents</a></li>
+			</ul>
+		</nav>
+		<!--Navigation End-->
+        <!--Main Container-->
+        <main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<form class="cp-form" id="customer-profiler" method="get" action="">
+							<!--Collapse Panel Start-->
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<!--Panel One-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Documents-Bank Statement <i class="more-less fa fa-chevron-up"></i></h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse paper-shadow collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<table class="table" style="width:60%; margin:0 auto;">
+												<tr>
+													<td class="blue"><b>Need Relationship Manager Assistance for below Document Upload</b> <span class="red">*</span></td>
+													<td width="200px">
+														<label class="radio">
+															<input type="radio" name="RMa" value="0"  />
+															<span>Yes</span>
+														</label>
+														<label class="radio">
+															<input type="radio" name="RMa" value="1"  />
+															<span>No</span>
+														</label>
+													</td>
+												</tr>
+											</table>
+											<!--Yes Option Start-->
+											<div id="RMselect">
+												<!-- Modal -->
+												<div class="modal fade" id="RMModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-body text-center">
+																<div class="doc-manager-modal">
+																	<h3><b>Are you sure you want help from<br />Relationship Manager to upload documents</b></h3>
+																	<input type="button" value="Yes" class="btn blue-btn yes-select" />
+																	<input type="button" value="No" data-dismiss="modal" aria-label="Close" class="btn blue-btn" />
+																</div>
+																<div class="doc-thankyou rm-thankyou" hidden>
+																	<img src="images/success.svg" width="50px" />
+																	<h3>Thank you for your response.</h3>
+																	<p>Our reprsentative will call you on the registered  mobile number for documents upload.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--Yes Option End-->
+											</div>
+											
+											<!--No Option Start-->
+											<div id="BankStatement" hidden>
+												<div class="table-responsive">
+													<table class="table default-table">
+														<tbody>
+															<tr>
+																<td width="200px"><b>Bank Statement <span class="red"> * </span></b></td>
+																<td><input type="button" value="Auto Fetch" class="btn blue-btn doc-btn BSAutoFetch-btn" /> <input type="button" value="Upload" class="btn blue-btn doc-btn BSUpload-btn" /></td>
+															</tr>
+															<tr>
+																<td><b>GST Return's <span class="red"> * </span></b></td>
+																<td><input type="button" value="Auto Fetch" class="btn blue-btn doc-btn" /> <input type="button" value="Upload" class="btn blue-btn doc-btn" /></td>
+															</tr>
+															<tr>
+																<td><b>Income Tax Return</b></td>
+																<td><input type="button" value="Auto Fetch" class="btn blue-btn doc-btn" /> <input type="button" value="Upload" class="btn blue-btn doc-btn" /></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												
+												<!-- Bank Statement Auto Fetch Start-->
+												<div class="auto-fetch-form" id="BSAutoFetch" hidden>
+													<div class="BS-Content">
+														<p><i>Your Credentials are never Stored.<br/>To give you the best  possible  solution, we need to analyse your transactions for the last 12 months. Once analysed we delete your details</i></p>
+														<div class="form-group">
+															<label><b>Select Bank</b> <span class="red">*</span></label>
+															<select class="form-control custom-select" value="">
+																<option value=""></option>
+																<option value="1">123</option>
+																<option value="2">345</option>
+																<option value="3">567</option>
+																<option value="4">789</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label><b>Login ID</b> <span class="red">*</span></label>
+															<input type="text" class="form-control" value=""="">
+														</div>
+														<div class="form-group">
+															<label><b>Password</b> <span class="red">*</span></label>
+															<input type="password" class="form-control" value=""="">
+														</div>
+														<div class="action-button">
+															<input type="submit" class="btn blue-btn BS-submit" value="Submit" />
+															<input type="submit" class="btn blue-btn" value="Close" /> 
+														</div>
+													</div>
+													<div class="doc-thankyou text-center BS-thankyou" hidden>
+														<img src="images/success.svg" width="50px" />
+														<h3>Thank you for your response.</h3>
+														<p>Our reprsentative will call you on the registered  mobile number for documents upload.</p>
+													</div>
+												</div>
+												<!-- Bank Statement Auto Fetch End-->
+												
+												<!-- Bank Statement Upload Start-->
+												<div class="auto-fetch-form" id="BSUpload" hidden>
+													<div class="BS-Upload">
+														<p><b>Instruction</b></p>
+														<ol>
+															<li>Log in to the Internet Banking and download the account statement(s) for the period as prescribed on the screen</li>
+															<li>Ensure that the files are not password protected.</li>
+															<li>Ensure that the name of the bank is correctly selected.</li>
+															<li>Upload the downloaded bank statement(s) in PDF format by clicking on the 'Add Files' button.</li>
+															<li>In the case of multiple statements, click on 'Add Files' each time to upload subsequent files</li>
+															<li>Once all the statements are uploaded, click on the 'Upload' button to complete uploading bank statements.</li>
+														</ol>
+														<p>Please upload PDF of your Current Account statement/Limit Account statement  of other banks after downloading from Internet Banking</p>
+														<div class="form-group">
+															<label><b>Select Bank</b> <span class="red">*</span></label>
+															<select class="form-control custom-select" value="">
+																<option value=""></option>
+																<option value="1">123</option>
+																<option value="2">345</option>
+																<option value="3">567</option>
+																<option value="4">789</option>
+															</select>
+														</div>
+														<div class='form-group'>
+															<label class='control-label'><b>Duration</b> <span class="red">*</span></label>
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="input-group date" data-date-format="dd-mm-yyyy">
+																		<label class='control-label'>From</label>
+																		<input class="form-control" type="text" />
+																		<span class="input-group-addon"><i class="far fa-calendar-alt btn-icon"></i></span>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="input-group date" data-date-format="dd-mm-yyyy">
+																		<label class='control-label'>To</label>
+																		<input class="form-control" type="text" />
+																		<span class="input-group-addon"><i class="far fa-calendar-alt btn-icon"></i></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class='form-group'>
+															<label class='control-label'><b>Month on Month Limit</b> <span class="red">*</span></label>
+															<div class="table-responsive">
+																<table class="table default-table" width="80%">
+																	<thead>
+																		<tr>
+																			<th rowspan="2">Existig Limit</th>
+																			<th>Month 1</th>
+																			<th>Month 2</th>
+																			<th>Month 3</th>
+																			<th>Month 4</th>
+																			<th>Month 5</th>
+																			<th>Month 6</th>
+																			<th>Month 7</th>
+																			<th>Month 8</th>
+																			<th>Month 9</th>
+																			<th>Month 10</th>
+																			<th>Month 11</th>
+																			<th>Month 12</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																			<td><input type="text" class="form-control" value=""=""></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class='form-group'>
+															<label class='control-label'><b>Upload Statement</b></label>
+															<div class="table-responsive">
+																<table class="table default-table" width="80%">
+																	<thead>
+																<tr>
+																	<th style="width:20px"></th>
+																	<th>Document Name</th>
+																	<th>Status</th>
+																	<th>Description</th>
+																	<th>Remove</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><label class="radio"><input type="radio" name="UploadStatement" checked=""><span></span></label></td>
+																	<td>Statement-89000000009.pdf</td>
+																	<td>Valid</td>
+																	<td>Upload Successful</td>
+																	<td><button class="icon-btn"><i class="fa fa-trash"></i></button></td>
+																</tr>
+																<tr>
+																	<td><label class="radio"><input type="radio" name="UploadStatement"><span></span></label></td>
+																	<td>Statement-89000000005.pdf</td>
+																	<td>Valid</td>
+																	<td>Upload Successful</td>
+																	<td><button class="icon-btn"><i class="fa fa-trash"></i></button></td>
+																</tr>
+															</tbody>
+															</table>
+															</div>
+														</div>
+														<div class="action-button">
+															<input type="submit" class="btn blue-btn" value="Submit" onclick="window.location.href='additional-information.html';">
+															<input type="submit" class="btn blue-btn" value="Close"> 
+														</div>
+													</div>
+													<div class="doc-thankyou text-center BS-thankyou" hidden>
+														<img src="images/success.svg" width="50px" />
+														<h3>Thank you for your response.</h3>
+														<p>Our reprsentative will call you on the registered  mobile number for documents upload.</p>
+													</div>
+												</div>
+												<!-- Bank Statement Upload End-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- panel-group -->
+							<!--Collapse Panel End-->
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--Main Container-->
+		
+		<!--Footer Start-->
+		<footer class="footer">Powered by Servosys Solutions</footer>
+		<!--Footer End-->
+	</body>
+	<!--SCRIPT JS-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<!--Responsive DataTable JS-->
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/responsive.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom-file-input.js"></script>
+	<script type="text/javascript" src="js/jquery.bubble-slider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- remove this if you use Modernizr -->
+	<script>$("html").addClass("rose");(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)rose(\s|$)/,"$1js$2")})(document,window,0);</script>
+	<script>
+		$("input[name$='RMa']").click(function() {
+			var radio_value = $(this).val();
+			if (radio_value == '0') {
+				$("#RMselect").fadeIn("slow");
+				$("#BankStatement").fadeOut("slow");
+				} else if (radio_value == '1') {
+				$("#BankStatement").fadeIn("slow");
+				$("#RMselect").fadeOut("slow");
+			}
+		});
+		
+		$('input[name="RMa"]').change(function() {
+			if($(this).is(':checked') && $(this).val() == '0') {
+				$('#RMModal').modal('show');
+			}
+		});
+		$(".yes-select").click(function(){
+			$(".rm-thankyou").fadeIn("slow");
+			$(".doc-manager-modal").hide();
+		});
+		$(".BS-submit").click(function(){
+			$(".BS-thankyou").fadeIn("slow");
+			$(".BS-Content").fadeOut("slow");
+		});
+		$(".BSAutoFetch-btn").click(function(){
+			$("#BSAutoFetch").fadeIn("slow");
+			$("#BSUpload").fadeOut("slow");
+		});
+		$(".BSUpload-btn").click(function(){
+			$("#BSUpload").fadeIn("slow");
+			$("#BSAutoFetch").fadeOut("slow");
+			$(".BS-thankyou").fadeOut("slow");
+		});
+	</script>
+</html>																																																																																																				
